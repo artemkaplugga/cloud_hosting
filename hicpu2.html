@@ -56,9 +56,16 @@
             </div>
             <div class="nav-mobile" id="navMobile">
                 <div class="nav-right">
-                    <div class="language-selector">
-                        <span class="globe-icon">🌐</span>
-                        <span>русский</span>
+                    <div class="language-selector dropdown">
+                        <button class="language-button">
+                            <span class="globe-icon">🌐</span>
+                            <span class="current-lang">русский</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" class="language-option active">русский</a>
+                            <a href="#" class="language-option">english</a>
+                        </div>
                     </div>
                     <div class="auth-buttons">
                         <a href="#" class="nav-item">Вход</a> / <a href="#" class="nav-item">Регистрация</a>

@@ -204,17 +204,69 @@
 }
 
 .language-selector {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.language-button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+    background: none;
+    border: none;
+    color: #94A3B8;
     cursor: pointer;
+    padding: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .globe-icon {
     font-size: 1.2rem;
-    opacity: 0.8;
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0F172A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+    min-width: 120px;
+    display: none;
+    z-index: 1000;
+}
+
+.language-selector:hover .language-dropdown {
+    display: block;
+}
+
+.language-selector:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.language-option {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #94A3B8;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.language-option:hover {
+    background: rgba(37, 99, 235, 0.1);
+    color: #F8FAFC;
+}
+
+.language-option.active {
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.1);
 }
 
 .auth-buttons {
@@ -393,5 +445,10 @@
 
     .burger-menu.active .burger-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .language-dropdown {
+        right: 0;
+        left: auto;
     }
 } 
