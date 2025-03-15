@@ -1,0 +1,188 @@
+.swiper-section {
+    width: 100%;
+    height: 500px;
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.8) 40%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slide-content h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slide-content p {
+    font-size: 18px;
+    color: #94A3B8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide-button {
+    display: inline-block;
+    background: #2563EB;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.slide-button:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(37, 99, 235, 0.3);
+}
+
+.swiper-pagination {
+    bottom: 40px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2563EB;
+    transform: scale(1.2);
+}
+
+/* Добавляем фоновые изображения для слайдов */
+.swiper-slide:nth-child(1) {
+    background-image: url('../images/slides/ddos.jpg');
+}
+
+.swiper-slide:nth-child(2) {
+    background-image: url('../images/slides/server.jpg');
+}
+
+.swiper-slide:nth-child(3) {
+    background-image: url('../images/slides/cpu.jpg');
+}
+
+@media (max-width: 768px) {
+    .swiper-section {
+        height: 400px;
+    }
+
+    .slide-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slide-content h1 {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .slide-content p {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-section {
+        height: 350px;
+    }
+
+    .slide-content h1 {
+        font-size: 28px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .slide-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .swiper-pagination {
+        bottom: 20px !important;
+    }
+} 

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aёtix — Хостинг</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/benefits.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo">aёtix</a>
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div class="nav-center">
+                <div class="dropdown">
+                    <a href="#" class="nav-item">услуги <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/vds.html" class="dropdown-item">
+                            <span class="dropdown-icon">🌐</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">облачные серверы (VDS)</div>
+                                <div class="dropdown-description">современные процессоры и NVMe SSD</div>
+                            </div>
+                        </a>
+                        <a href="/hicpu2.html" class="dropdown-item">
+                            <span class="dropdown-icon">⚡</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">high-cpu серверы</div>
+                                <div class="dropdown-description">невероятно быстрые и мощные</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">информация <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/contacts.html" class="dropdown-item">
+                            <span class="dropdown-icon">📞</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">контакты</div>
+                                <div class="dropdown-description">связаться с нами</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <span class="globe-icon">🌐</span>
+                    <span>русский</span>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="nav-item">Вход</a> / <a href="#" class="nav-item">Регистрация</a>
+                </div>
+            </div>
+            <div class="nav-mobile" id="navMobile"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="swiper-section">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>ЗАЩИТА<br>ОТ DDOS<br>АТАК</h1>
+                            <p>До 2 Тбит/с трафика очистки, до 600 Гбит/с тонкой фильтрации.<br>Защита включена в стоимость и работает постоянно</p>
+                            <a href="#" class="slide-button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>ОБЛАЧНЫЕ<br>СЕРВЕРЫ<br>VDS</h1>
+                            <p>Виртуальные серверы на мощных процессорах AMD<br>и NVMe SSD накопителях</p>
+                            <a href="/vds.html" class="slide-button">Выбрать сервер</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>HIGH-CPU<br>СЕРВЕРЫ</h1>
+                            <p>Самые мощные виртуальные серверы на базе<br>AMD Ryzen Threadripper 3990X и Intel Core i9-12900K</p>
+                            <a href="/hicpu2.html" class="slide-button">Выбрать сервер</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Хостинг aёtix</h1>
+                <p>Надежный хостинг для ваших проектов</p>
+            </div>
+            <div class="price-section">
+                <div class="price-tag">от €4.94/месяц</div>
+                <ul class="features-list">
+                    <li>Мгновенное развертывание</li>
+                    <li>Защита от DDoS-атак</li>
+                    <li>SSD-накопители</li>
+                    <li>Круглосуточная поддержка</li>
+                </ul>
+                <a href="/vds.html" class="cta-button">Выбрать тариф</a>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Время работы</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Поддержка</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10 Гбит/с</div>
+                <div class="stat-label">Скорость</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5 мин</div>
+                <div class="stat-label">Установка</div>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h2 class="service-title">Облачные серверы</h2>
+                <p>Виртуальные серверы на SSD</p>
+                <ul class="os-list">
+                    <li class="os-item">CentOS</li>
+                    <li class="os-item">Ubuntu</li>
+                    <li class="os-item">Debian</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h2 class="service-title">Выделенные серверы</h2>
+                <p>Мощные серверы для проектов</p>
+                <ul class="os-list">
+                    <li class="os-item">Root-доступ</li>
+                    <li class="os-item">RAID</li>
+                    <li class="os-item">Мониторинг</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h2 class="service-title">Защита</h2>
+                <p>Защита от DDoS-атак</p>
+                <ul class="os-list">
+                    <li class="os-item">AntiDDoS</li>
+                    <li class="os-item">Фильтрация</li>
+                    <li class="os-item">WAF</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="why-section">
+            <h2>Почему aёtix?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Поддержка</h3>
+                    <p>Быстрые ответы в чате</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💾</div>
+                    <h3>Бэкапы</h3>
+                    <p>Резервное копирование</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Оплата</h3>
+                    <p>Почасовая оплата</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Защита</h3>
+                    <p>DDoS защита</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>О компании</h3>
+                        <div class="company-logo">aёtix</div>
+                        <p class="company-description">Надежный хостинг-провайдер с 2020 года</p>
+                        <div class="company-info">
+                            <p>Aetix International LTD</p>
+                            <p>Рег. номер: 123456789</p>
+                            <p>347 Barking Road, London</p>
+                            <p>United Kingdom</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="#">Виртуальные серверы</a></li>
+                            <li><a href="#">Выделенные серверы</a></li>
+                            <li><a href="#">Защита от DDoS</a></li>
+                            <li><a href="#">Резервное копирование</a></li>
+                            <li><a href="#">Мониторинг</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Поддержка</h3>
+                        <ul>
+                            <li><a href="#">База знаний</a></li>
+                            <li><a href="#">Статус серверов</a></li>
+                            <li><a href="#">Тикет-система</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul class="contacts-list">
+                            <li><a href="tel:88002006013">8 800 200-60-13</a></li>
+                            <li><a href="mailto:support@aetix.net">support@aetix.net</a></li>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="#">Правила использования</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Публичная оферта</a>
+                    </div>
+                    <div class="copyright">
+                        © 2024 Aetix. Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            effect: 'slide',
+            speed: 1000,
+        });
+    </script>
+</body>
+</html>

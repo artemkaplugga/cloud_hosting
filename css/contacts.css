@@ -1,0 +1,154 @@
+.contacts-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.logo-container {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-outline {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #2563EB;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-letter {
+    color: #2563EB;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.contact-block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    color: #F8FAFC;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    color: #2563EB;
+}
+
+.contact-note {
+    color: #94A3B8;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.contact-note p {
+    margin: 0;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+.social-block {
+    text-align: center;
+}
+
+.social-block h2 {
+    color: #F8FAFC;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.social-block p {
+    color: #94A3B8;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.legal-block {
+    text-align: center;
+}
+
+.legal-header {
+    margin-bottom: 20px;
+}
+
+.legal-icon {
+    color: #2563EB;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.legal-block h2 {
+    color: #F8FAFC;
+    font-size: 24px;
+    margin: 0;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.legal-info {
+    color: #94A3B8;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.legal-info p {
+    margin: 0 0 10px;
+}
+
+.legal-info p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .contacts-section {
+        padding: 40px 20px;
+    }
+
+    .logo-outline {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-letter {
+        font-size: 60px;
+    }
+
+    .contact-link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-outline {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-letter {
+        font-size: 48px;
+    }
+
+    .contact-link {
+        font-size: 18px;
+    }
+} 

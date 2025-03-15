@@ -1,0 +1,157 @@
+.price-section {
+    background: rgba(30, 32, 40, 0.5);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-tag {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin: 15px 0;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.features-list li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #4facfe;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.vds-plans {
+    padding: 60px 0;
+}
+
+.vds-plans h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.plan-card {
+    background: rgba(30, 32, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+.plan-card.popular {
+    border-color: #4facfe;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4facfe;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.plan-header {
+    margin-bottom: 30px;
+}
+
+.plan-header h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.plan-price {
+    color: #fff;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.period {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+}
+
+.plan-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.plan-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .vds-plans h2 {
+        font-size: 28px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+} 

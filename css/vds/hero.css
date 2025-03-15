@@ -1,0 +1,154 @@
+.vds-hero {
+    position: relative;
+    padding: 80px 0;
+    background: #0B0F17;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.vds-hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+}
+
+.vds-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+.vds-hero-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 40px;
+    line-height: 1.6;
+}
+
+.vds-hero-form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.vds-email-input {
+    flex: 1;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.vds-email-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.vds-register-button {
+    height: 48px;
+    padding: 0 32px;
+    background: #3B82F6;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.vds-register-button:hover {
+    background: #2563EB;
+}
+
+.vds-social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.vds-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.vds-social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.vds-social-link img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+}
+
+.vds-hero-image {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.vds-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .vds-hero-image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .vds-hero-image {
+        display: none;
+    }
+    
+    .vds-hero-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .vds-hero {
+        padding: 40px 0;
+    }
+
+    .vds-hero-content {
+        padding: 0 20px;
+    }
+
+    .vds-hero h1 {
+        font-size: 36px;
+    }
+
+    .vds-hero-description {
+        font-size: 16px;
+    }
+
+    .vds-hero-form {
+        flex-direction: column;
+    }
+
+    .vds-register-button {
+        width: 100%;
+    }
+} 

@@ -1,0 +1,45 @@
+.vds-locations {
+    margin: 40px 0;
+}
+
+.locations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.location {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.location:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.location.active {
+    background: #3B82F6;
+    color: white;
+}
+
+.location.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .locations-list {
+        justify-content: center;
+    }
+    
+    .location {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+} 
