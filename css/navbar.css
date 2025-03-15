@@ -451,4 +451,45 @@
         right: 0;
         left: auto;
     }
+}
+
+@media (max-width: 480px) {
+    .nav-right .auth-buttons {
+        display: none !important;
+    }
+
+    .nav-center .mobile-auth {
+        display: flex;
+        margin-top: 0;
+        padding: 0.5rem 0;
+        border-top: none;
+        text-align: left;
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    .nav-center .mobile-auth .nav-item {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        text-align: left;
+        width: auto;
+    }
+
+    .nav-center .mobile-auth .nav-item:hover {
+        color: #fff;
+    }
+
+    .nav-mobile .auth-buttons {
+        display: block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+
+    .nav-mobile .auth-buttons .nav-item {
+        display: inline;
+        padding: 0;
+        color: var(--text-secondary);
+    }
 } 

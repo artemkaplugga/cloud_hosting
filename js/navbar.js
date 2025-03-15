@@ -2,6 +2,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.querySelector('.burger-menu');
     const navCenter = document.querySelector('.nav-center');
     const dropdowns = document.querySelectorAll('.nav-center .dropdown');
+    const authButtons = document.querySelector('.nav-right .auth-buttons');
+
+    // Добавляем кнопки авторизации после пункта "информация"
+    function addMobileAuth() {
+        if (authButtons && window.innerWidth <= 480) {
+            const infoDropdown = Array.from(dropdowns).find(dropdown => 
+                dropdown.querySelector('.nav-item').textContent.toLowerCase().includes('информация')
+            );
+            
+            if (infoDropdown) {
+                const mobileAuthButtons = authButtons.cloneNode(true);
+                mobileAuthButtons.classList.add('mobile-auth');
+                infoDropdown.after(mobileAuthButtons);
+            }
+        }
+    }
+
+    // Инициализация мобильной авторизации
+    addMobileAuth();
 
     // Открытие/закрытие бургер-меню
     burgerMenu.addEventListener('click', function() {
@@ -29,9 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Закрытие меню при изменении размера окна
+    // Обработка изменения размера окна
     window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
+        const existingMobileAuth = navCenter.querySelector('.mobile-auth');
+        
+        if (window.innerWidth <= 480) {
+            if (!existingMobileAuth) {
+                addMobileAuth();
+            }
+        } else {
+            if (existingMobileAuth) {
+                existingMobileAuth.remove();
+            }
             burgerMenu.classList.remove('active');
             navCenter.classList.remove('active');
             dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
